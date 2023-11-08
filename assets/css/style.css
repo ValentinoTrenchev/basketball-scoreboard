@@ -1,0 +1,84 @@
+/* FONTS */
+@font-face {
+  font-family: 'cursed_timer_ulilregular';
+  src: url('../fonts/cursedtimerulil-aznm-webfont.woff') format('woff2'),
+       url('../fonts/cursedtimerulil-aznm-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* RESET*/
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #111827;
+}
+/* HEADINGS */
+h2{
+  font-size: 50px;
+  line-height: 53px;
+  margin: 0 auto;
+  color: #e5e5e5;
+}
+h3{
+  font-size: 40px;
+  margin: 20px 0 0 0; 
+  color: #e5e5e5;
+}
+h4{
+  font-family: 'cursed_timer_ulilregular', Tahoma, sans-serif;
+  font-size: 90px;
+  margin: 0;
+  color: #F94F6D;
+}
+/* BUTTONS */
+button{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  margin: 20px 0 20px 0;
+}
+button:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* TITLE SECTION */
+.title-container{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+  background-color: #075985;
+  padding: 20px;
+}
+/*SCOREBOARD SECTION */
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  column-gap: 100px;
+  background-color: #0C4A6E;
+}
+.score-container{
+  background-color: #111827;
+  padding: 30px 20px 20px 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.new-game-container{
+  margin-top: 0;
+}
+/* RESPONSIVE */
+@media (max-width:600px) {
+  .container{
+    column-gap: 50px;
+  }
+  h2{
+    font-size: 40px;
+  }
+}

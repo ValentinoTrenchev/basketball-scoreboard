@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--STYLES-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Basketball Scoreboard</title>
+</head>
+<html>
+    <body>
+        <!--TITLE SECTION-->
+        <div class="title-container">
+            <h2>BASKETBALL SCOREBOARD</h3>
+        </div>
+        <!--SCOREBOARD SECTION-->
+        <div class="container">
+            <!--SCOREBOARD HOME-->
+            <div>
+                <h3>HOME</h3>
+                <div class="score-container">
+                    <h4 id="score-home">0</h4>
+                </div>
+                <div class="increments-container">
+                    <button onclick="incrementOneHome()">+ 1</button>
+                    <button onclick="incrementTwoHome()">+ 2</button>
+                    <button onclick="incrementThreeHome()">+ 3</button>
+                </div>
+            </div>
+            <!--SCOREBOARD GUEST-->
+            <div>
+                <h3>GUEST</h3>
+                <div class="score-container">
+                    <h4 id="score-guest">0</h4>
+                </div>
+                <div class="increments-container">
+                    <div class="increments-container">
+                        <button onclick="incrementOneGuest()">+ 1</button>
+                    <button onclick="incrementTwoGuest()">+ 2</button>
+                    <button onclick="incrementThreeGuest()">+ 3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--NEW GAME RESET SECTION-->
+        <div class="new-game-container container">
+            <button onclick="resetCounter()">NEW GAME</button>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
